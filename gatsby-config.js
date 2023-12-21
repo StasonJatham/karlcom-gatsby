@@ -6,5 +6,11 @@ module.exports = {
     title: `karlcom-gatsby`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-postcss"]
+  plugins: ["gatsby-plugin-postcss", {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `content`,
+      path: `${__dirname}/src/content`,
+    },
+  }, `gatsby-transformer-remark`]
 };
