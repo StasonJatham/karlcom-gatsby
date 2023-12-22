@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../layouts/layout"
 import Hero from "../sections/Hero"
-import Services from "../sections/Services"
+import ValueProposition from "../sections/ValueProposition"
 
 export default function Home() {
   return (
     <Layout>
       <Hero />
-      <Services />
+      <ValueProposition />
 
     </Layout>
   );

@@ -16,7 +16,7 @@ function NavList() {
                 variant="paragraph"
                 className="p-1 text-indigo-800 font-semibold"
             >
-                <Link to="/home">Home</Link>
+                <Link to="/">Home</Link>
             </Typography>
             <Typography
                 as="li"
@@ -59,19 +59,20 @@ export default function NavbarSimple() {
     }, []);
 
     return (
-        <div className="sticky top-0 z-10 bg-white rounded-b-xl">
-            <Navbar color="" className="rounded-xl bg-yellow-600 mx-auto max-w-screen-xl h-max px-4 py-2 lg:px-8 lg:py-4" >
+        <div className="sticky top-0 z-10 bg-yellow-600 sm:bg-white rounded-b-xl md:pt-4 sm:pt-2 pt-0">
+            <Navbar color="" className="rounded-xl  bg-yellow-600 mx-auto max-w-screen-xl h-max px-4 py-2 lg:px-8 lg:py-4" >
                 <div className="flex items-center justify-between text-indigo-800">
+
                     <Typography
-                        as="a"
-                        href="#"
                         variant="h6"
                         className="flex mr-4 cursor-pointer py-1.5"
                     >
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" dataslot="icon" className="w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
-                        </svg>
-                        <span className="ml-1">KARLCOM</span>
+                        <Link to="/" className="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" dataslot="icon" className="w-6 h-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                            </svg>
+                            <span className="ml-1">KARLCOM</span>
+                        </Link>
                     </Typography>
                     <div className="hidden lg:block">
                         <NavList />

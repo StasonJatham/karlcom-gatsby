@@ -1,0 +1,27 @@
+/* styles/markdown.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black; /* Use utility classes directly for dark mode */
+  }
+}
+
+h1 {
+  @apply text-2xl font-bold my-4; /* Tailwind-like syntax using @apply */
+}
+
+h2 {
+  @apply text-xl font-bold my-2; /* Tailwind-like syntax using @apply */
+}
+
+h3 {
+  @apply text-lg font-bold my-4; /* Tailwind-like syntax using @apply */
+}
+
+p {
+  font-size: 1rem; /* Standard CSS syntax */
+  margin-bottom: 1rem;
+}
